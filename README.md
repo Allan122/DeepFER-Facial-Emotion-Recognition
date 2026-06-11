@@ -21,6 +21,9 @@ The project utilized a massive dataset of over **71,000 grayscale facial images*
 * **Data Wrangling:** Engineered a pipeline using `cv2` to systematically scan and filter out corrupted files and zero-variance outliers (pitch-black/blank images) prior to model ingestion.
 * **Class Imbalance Handling:** The dataset was heavily biased toward 'Happy' and 'Neutral'. Instead of using SMOTE (which blurs image interpolations), **Cost-Sensitive Learning (Class Weights)** was mathematically calculated and injected into the training loop to penalize the loss function for majority-class bias.
 
+## Dataset Link
+https://drive.google.com/file/d/1zpTI5zE0R_jREra7jw6THfZ-RXIeN7sm/view?usp=drive_link
+
 ## Tech Stack & Libraries
 * **Core Language:** Python
 * **Deep Learning Framework:** TensorFlow & Keras
