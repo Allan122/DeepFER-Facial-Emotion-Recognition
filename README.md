@@ -44,18 +44,18 @@ Three distinct CNN topologies were engineered and rigorously tested:
 ### 3. Model Explainability (Grad-CAM)
 To break the "black box" stigma of deep learning, **Gradient-weighted Class Activation Mapping (Grad-CAM)** was engineered. The resulting heatmaps mathematically proved that the CNN was actively firing its neurons on the structural geometry of the face (the eyes, mouth, and brow ridges) to make its predictions, rather than memorizing background noise.
 
-## 📈 Results & Evaluation
+## Results & Evaluation
 * **Winning Architecture:** Model 2 (Bayesian-Tuned Deep CNN with Batch Normalization).
 * **Primary Metrics:** Evaluated primarily on **Macro F1-Score** and **Recall** to ensure minority classes (like Disgust and Fear) were not ignored. 
 * **Performance:** Achieved highly stable training and validation loss curves, successfully extracting complex non-linear spatial features while aggressively neutralizing overfitting through heavy dropout (0.5) and dynamic augmentation.
 
-## 💼 Business Impact & Deployment
+## Business Impact & Deployment
 The fully optimized model and corresponding categorical encoder were serialized into `.h5` and `.joblib` formats. 
 * **Customer Service:** Real-time routing of frustrated or angry users to specialized human retention agents.
 * **Telehealth:** Instant flagging of subtle depressive or fearful micro-expressions for clinical review.
 * **UX/UI:** Enables software to adapt dynamically to the user's current emotional state, fostering deeper human-computer empathy.
 
-## 👨‍💻 Author
+## Author
 **Allan Cheerakunnil Alex** Aspiring Data Scientist | AI & Deep Learning Enthusiast  
 *Master's Program Candidate at AlmaBetter*
 
